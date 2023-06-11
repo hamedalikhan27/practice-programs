@@ -1,3 +1,5 @@
+# This is the program where computer will choose a random number between 1 to 10
+# and we have to guess it
 import random
 
 def guess(x):
@@ -6,9 +8,9 @@ def guess(x):
     while guess != random_number:
         guess = int(input(f" Guess a number between 1 to {x}:"))
         if guess < random_number:
-            print(f"wrong answer, guess again, too low")
+            print(f"sorry, guess again, too low")
         elif guess > random_number:
-            print(f"Wrong answer, guess again, too high")
+            print(f"sorry, guess again, too high")
         
     print(f"yah! you have guessed the number {random_number} correctly")
 
